@@ -1,0 +1,149 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header nav {
+    margin-top: 0.5rem;
+}
+
+header nav a {
+    color: white;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav a:hover {
+    color: #ffcc00;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+main:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+main section {
+    display: none;
+}
+
+main section.active {
+    display: block;
+}
+
+.workout {
+    margin-bottom: 1.5rem;
+    border: 1px solid #007bff;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.workout:hover {
+    transform: translateY(-5px);
+}
+
+.collapsible {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 1.2rem 1.5rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 12px 12px 0 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.collapsible:hover {
+    background-color: #0056b3;
+}
+
+.collapsible.active,
+.collapsible:after {
+    background-color: #0056b3;
+}
+
+.content {
+    padding: 1.2rem 1.5rem;
+    display: none;
+    overflow: hidden;
+    border-top: 1px solid #007bff;
+    border-radius: 0 0 12px 12px;
+    background: #e9f5ff;
+}
+
+h4 {
+    margin-top: 0;
+    color: #0056b3;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h5 {
+    margin-top: 1.2rem;
+    color: #007bff;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+canvas {
+    margin-top: 1.5rem;
+    width: 100% !important;
+    height: 400px !important;
+}
+
+/* Styles for chart container */
+#chart-container .workout {
+    margin-bottom: 1.5rem;
+}
+
+#chart-container .collapsible {
+    padding: 0.8rem 1.5rem;
+}
+
+#chart-container .content {
+    padding: 0.8rem 1.5rem;
+}
+
+/* Transition for collapsible content */
+.collapsible + .content {
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Workout History</h1>
+        <nav>
+            <a href="#charts-section">Charts</a>
+            <a href="#historical-data-section">Historical Data</a>
+        </nav>
+    </header>
+    <main>
+        <section id="charts-section" class="active">
+            <h2>Workout Progress</h2>
+            <div id="chart-container"></div>
+        </section>
+        <section id="historical-data-section">
+            <h2>Historical Workouts</h2>
+            <div id="historical-container"></div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
