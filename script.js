@@ -153,6 +153,7 @@ function prepareChartData() {
                     chartData[section.section_name][exercise.name].push({
                         date: date,
                         weight: weight,
+                        weightLabel: set.weight,
                         reps: set.reps,
                         set: set.set
                     });
